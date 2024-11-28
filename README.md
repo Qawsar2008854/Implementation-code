@@ -587,7 +587,7 @@ callback=LearningRateScheduler(scheduler)
 
 
 # Train the model
-history = final_model.fit([X_train_filtered, X_train_filtered, X_train_filtered], y_train, validation_data=([X_val_filtered, X_val_filtered, X_val_filtered], y_val), callbacks=[early_stopping,callback], epochs=20, batch_size=64, verbose=2)
+history = final_model.fit([X_train_filtered, X_train_filtered, X_train_filtered], y_train, validation_data=([X_val_filtered, X_val_filtered, X_val_filtered], y_val), callbacks=[early_stopping,callback], epochs=50, batch_size=64, verbose=2)
 
 
 # In[ ]:
